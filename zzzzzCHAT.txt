@@ -1,0 +1,83 @@
+3 LEVELS OF ACCESS
+ADMINISTRATOR: CAN CREATE END CUSTOMER USER AND CAN CREATE SELLER USER, ADMINISTRATOR USER CAN
+USES THE END CUSTOMER SYSTEM AND CAN CREATE AN ADMINISTRATOR USER, AND CAN ALSO DELETE OR EDIT ANY OTHER USER WHO IS AN ADMINISTRATOR OR SELLER OR END CUSTOMER
+WHEN YOU CREATE THE END USER, IT WILL BE SOMEWHERE WHO CREATED THAT USER. AND WHEN YOU CREATE A USER TO BE A SELLER YOU WILL HAVE TO CHOOSE THE AMOUNT OF CREDITS
+AND THE ADMINISTRATOR DOES NOT NEED A LIST OF CREDITS BECAUSE THEY WILL HAVE INFINITE CREDITS TO CREATE END USER OR SELLER
+SELLER: CAN CREATE CUSTOMER USER, SELLER USER CAN USE THE CONSULTATION AND IT CAN ALSO BE WITH THE PARTY THAT CAN CREATE USER
+EACH CREDIT AVAILABLE TO THE SELLER USER MAY CREATE END USERS AND EACH OF THEM WILL DISCOUNT AN EXCLUSION CREDIT
+CUSTOMER: END USER TO USE THE SYSTEM.
+FOR THE ADMINISTRATOR CUSTOMER, THEY CAN SEE WHO THE SELLERS ARE IN A TAB TO EDIT THEIR DATA SUCH AS PASSWORD AND EVERYTHING THAT HAS BEEN REGISTERED
+ADMINISTRATOR CAN ALSO SEE ALL USERS AND WHO IT WAS CREATED BY AND CAN ALSO SEE ALL USERS AS SELLER AND ALL
+AND THERE WILL ALSO BE A CONSULTATION TAB
+     FOR THE SELLER CUSTOMER THERE WILL BE A LIST OF USERS THAT ONLY HE CREATED THE CUSTOMERS THAT WERE REGISTERED BY HIM
+     THE SELLER USER CAN ALSO USE THE DATA CONSULTATION SYSTEM
+     AND THE CUSTOMER WILL ONLY HAVE TO USE THE PANEL THAT WILL BE FOR CONSULTATION
+THIS CONSULTATION CAN BE USED TO CONSULT AND HAVE A DROPDOWN
+TO CHOOSE WHICH DATA YOU WANT TO CONSULT [CPF, NAME, MOTHER_NAME, PHONE, EMAIL]
+I HAVE MY OWN DATABASE FOR THIS QUERY IT IS IN .DB FORMAT
+RETURNS MUST COME IN AN ORGANIZED WAY
+http://genetetor.cobrancaterra.com:8085/api-serasa/api-cliente.php?token=11fa9be1-cd18-4e36-b76f-5b1c0c0bc2d3&cpf=02800040440
+MORE TO OBTAIN THIS RETURN YOU WILL HAVE TO EDIT MY API OR CREATE ANOTHER ONE TO CONSULT ACCORDING TO WHAT YOU REQUEST
+BY THE SYSTEM
+THOSE WHO WANT TO CONSULT VIA CPF WILL MARK AS CPF AND TYPE THE CPF FOR CONSULTATION AND THE RETURN WILL CALL ON THE SCREEN IN A BEAUTIFUL AND INTUITIVE WAY
+AND THE SAME THING WITH OTHER DATA
+THIS USER IS A CLIENT USER, SO YOU CAN SEE WHAT HE WILL HAVE AN EXAMPLE QUERY
+CPF: 02800040440
+      ACCESS THIS WEBSITE EXAMPLE THAT IS A FRIEND OF MY WEBSITE
+
+11:10
+Email: 72633@max
+Senha: 102030
+Link: https://maxbuscas.tech
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+I slept here, it's another time zone, have you already done the system up to the user login part of administrator type and sales type and end customer type
+1. Database Configuration:
+First, configure your database to store user information, credits, queries, etc. Use whatever format you prefer, such as MySQL or SQLite, and create tables as needed.
+2. User Authentication:
+Create a login form on the home page.
+Verify user credentials in PHP with database information.
+Use sessions or JWT tokens to keep the user authenticated across multiple pages.
+3. Access Control:
+Create roles or classes to represent the different access levels (Administrator, Salesperson and Customer).
+Implement authorization checks on each page or endpoint to ensure that only authorized users access certain functionality.
+4. Pages and Interfaces:
+Create pages for each type of user (control panels) with specific functionalities for each access level.
+Use HTML, CSS and PHP to build the user interface.
+5. Data Handling:
+Implement PHP scripts to create, edit and delete users, as well as to perform database queries.
+Ensure that sellers can only create users if they have available credits.
+6. Data Query:
+Integrate the data query service into your PHP system.
+Analyze and format query results for display in the user interface.
+7. Security:
+Protect your system against SQL injection and other common attacks.
+Use hash functions to store passwords securely in the database.
+Implement session security measures to protect against session attacks.
+8. Testing and Debugging:
+Perform extensive testing on all parts of the system.
+Fix errors and issues identified during testing.
+9. Implementation:
+Deploy your system on a PHP-compatible web server.
+Keep in mind that this is a general outline and you will need advanced knowledge of PHP, SQL, web application security, and other related concepts to successfully complete a project like this. Additionally, it can be helpful to break the project down into smaller tasks and implement them one at a time, checking each part as you go to ensure everything works as expected.
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+When I create I am an administrator. I will create the salesman Marcos. And I'll give him 50 credits
+12:32
+It can only create 50 end customers
+12:32
+And when he registers the customer, he will choose the date on which that user will expire and the login will expire.
+If the exporting client logs in, a message will appear on the screen saying that the user is expired
+12:33
+Expired
+When he blocks user
+New
+12:34
+Leave it to him to block the user
+12:34
+Seller cannot delete
+Just register and block or change the password or update any customer data that they registered
